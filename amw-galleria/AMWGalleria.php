@@ -130,7 +130,7 @@ class AMWGalleria {
 
 		// fetch the images
 		if (!empty($include)) {
-			// include only the given image IDs 
+			// include only the given image IDs
 			$include = preg_replace('/[^0-9,]+/', '', $include);
 			$_attachments = get_posts( array('include' => $include, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => $order, 'orderby' => $orderby) );
 			$attachments = array();
